@@ -156,3 +156,14 @@ export const prepareInstructions = ({
   Provide the feedback using the following format: ${AIResponseFormat}
   Return the analysis as a JSON object, without any other text and without the backticks.
   Do not include any other text or comments.`;
+
+
+export const formatSize = (fileSize: number): string => {
+  if (fileSize >= 1024 * 1024) {
+    return (fileSize / (1024 * 1024)).toFixed(2) + ' MB';
+  } else if (fileSize >= 1024) {
+    return (fileSize / 1024).toFixed(2) + ' KB';
+  } else {
+    return fileSize + ' B';
+  }
+};

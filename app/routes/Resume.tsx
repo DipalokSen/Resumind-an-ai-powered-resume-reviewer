@@ -97,7 +97,7 @@ const Resume = () => {
 
                     <Summary feedback={feedback}/>
                     <Ats score={feedback.ATS.score || 0} suggestions={feedback.ATS.tips || []}/>
-                    <Details/>
+                    <Details feedback={feedback}/>
                 </div>
 
                     </>

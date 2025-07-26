@@ -74,8 +74,8 @@ const Resume = () => {
             </Link>
         </nav>
 
-        <div className='flex flex-row w-full bg-red-400 max-lg:flex-col-reverse'>
-            <section className='feedback-section bg-purple-400'>
+        <div className='flex flex-row w-full  max-lg:flex-col-reverse'>
+            <section className='feedback-section '>
                 {imageUrl && resumeUrl && (
                 <a href={resumeUrl} target='_blank'>
 
@@ -96,7 +96,7 @@ const Resume = () => {
                 <div className='flex flex-col gap-8 animate-in fade-in duration-1000'>
 
                     <Summary feedback={feedback}/>
-                    <Ats score={feedback.ats_compatibility || 0} suggetion={feedback.ATS}/>
+                    <Ats score={feedback.ATS || 0} suggetion={feedback.ATS}/>
                     <Details/>
                 </div>
 

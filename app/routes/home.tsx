@@ -70,7 +70,7 @@ export default function Home() {
 
 {!isLoading &&  resume?.length===0 ? (
   <div>
-    <h1> Submit Your Resume For Ai Powered Feedback</h1>
+    <h3 className="text-xl text-gray-600"> Submit Your Resume For Ai Powered Feedback</h3>
   </div>
 ):<h2>Review Your Submission and ai powered feedback</h2>}
 
